@@ -1,0 +1,74 @@
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #5F6363;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav a {
+  font-family: 'Bubblegum Sans', cursive;
+  color: white;
+  font-size: 30px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-decoration: none;
+}
+
+#president-guinea-pig {
+  margin: 2%;
+  border-radius: 50%;
+  border: solid 2px black;
+  max-width: 95px;
+  max-height: 95px;
+  vertical-align: middle;
+}
+
+#title-text {
+  vertical-align: middle;
+}
+
+.title {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+}
+
+.nav-link {
+  -webkit-box-flex: 11%;
+      -ms-flex: 11%;
+          flex: 11%;
+}
+
+#nav-vote {
+  -webkit-box-flex: 26%;
+      -ms-flex: 26%;
+          flex: 26%;
+}
+
+body {
+  font-family: 'Bubblegum Sans', cursive;
+  color: white;
+  font-size: 30px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  background-color: #F5CE92;
+  text-align: center;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+footer a {
+  font-family: 'Bubblegum Sans', cursive;
+  color: white;
+  font-size: 30px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+//GENERAL
+@mixin font {
+    font-family: 'Bubblegum Sans', cursive;
+    color: white;
+    font-size: 30px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+//nav bar
+nav{
+    display: flex;
+    background-color: #5F6363;
+    align-items: center;
+    a {
+    @include font;
+    text-decoration: none;
+    }
+}
+#president-guinea-pig{
+    margin: 2%;
+    border-radius: 50%;
+    border: solid 2px black;
+    max-width: 95px;
+    max-height: 95px;
+    vertical-align: middle;
+}
+#title-text{
+    vertical-align: middle;
+}
+.title {
+    flex: 30%;
+}
+.nav-link {
+    flex: 11%;
+}
+#nav-vote {
+    flex: 26%;
+}
+
+
+//body
+body {
+    @include font;
+    background-color: #F5CE92;
+    text-align: center;
+    margin: 0px;
+}
+h1 {
+    font-size: 36px;
+}
+
+
+//footer
+footer{
+    a {
+    @include font;
+    text-decoration: none;
+    }
+}
+
+//HOMEPAGE
