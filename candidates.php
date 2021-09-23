@@ -18,19 +18,35 @@ include_once "parts/nav.php";
 </head>
 <body>
 
-<div id="home-container">
-    <img src="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/home-logo.png?raw=true" alt="home-guinea-pig-logo" id="home-logo">
-    <div id="home-text">
-        <h1>Time to elect a new Supreme Overlord !!</h1>
-
-        <p>The Revolution has come, humans !</p>
-
-        <p>The guinea pigs have taken over “the Apartment” !</br>
-        Learn more about the circumstances of this glorious event and its participants, and vote!</br>
-        You may also contact the former master of these lands, who was charged with creating this website.</br>
-
-        <p>Sincerely (not really) yours,</br>
-        The Guinea Pigs.</p>
+<div id="candidates-container">
+    
+    <h1> Presidential candidates </h1>
+    <p> Here are your potential future rulers: </p>
+    
+    <div id="candidates-intro"> 
+        <div class="candidate-box">
+            <h2 class="candidate-box-title">Boulette</h2>
+            <div class="candidate-intro-pic-bg">
+                <img src="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Boulette-1.JPG?raw=true" alt="Boulette-1" class="candidate-intro-pic">
+            </div>
+            <p class="candidate-box-text">As a foodie, Boulette’s policy will focus primarily on agriculture and manifacture of comfy pillows.</p>
+        </div>
+        
+        <div class="candidate-box">
+            <h2 class="candidate-box-title">Nugget</h2>
+            <div class="candidate-intro-pic-bg">
+                <img src="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Nugget-1.JPG?raw=true" alt="Nugget-1" class="candidate-intro-pic">
+            </div>
+            <p class="candidate-box-text">As a fearless explorer, Nugget’s goals are to dive in head first into terrain exploration, and hopefully mountains of food pellets.</p>
+        </div>
+        
+        <div class="candidate-box">
+            <h2 class="candidate-box-title">Burrito</h2>
+            <div class="candidate-intro-pic-bg">
+                <img src="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Burrito-1.JPG?raw=true" alt="Burrito-1" class="candidate-intro-pic">
+            </div>
+            <p class="candidate-box-text">As a modest piggy, Burrito’s main concerns are strong hiddies for security and reasonable consumption of food for more durable development.</p>
+        </div>
     </div>
 </div>
 </body>
