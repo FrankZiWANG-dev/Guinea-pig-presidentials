@@ -1,11 +1,11 @@
 <?php
 
 echo "<footer>"
-        ."<a href=''> Home </a>"
-        ."<a href=''> About the project </a>"
-        ."<a href=''> Candidates </a>"
-        ."<a href=''> Contact us </a>"
-        ."<a href=''> Vote! </a>"
+        ."<a href='index.php'> Home </a>"
+        ."<a href='project.php'> About the project </a>"
+        ."<a href='candidates.php'> Candidates </a>"
+        ."<a href='contact.php'> Contact us </a>"
+        ."<a href='vote.php'> Vote! </a>"
     ."</footer>";
 
 ?>
