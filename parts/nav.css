@@ -1,0 +1,190 @@
+#navHamburger {
+  display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #nav {
+    display: none;
+  }
+  #navHamburger {
+    display: block;
+  }
+  #navHamburger a {
+    font-family: 'Bubblegum Sans', cursive;
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px #000000;
+    -webkit-text-stroke: 1px black;
+    font-weight: initial;
+    text-decoration: none;
+  }
+  #president-guinea-pig {
+    margin: 2%;
+    border-radius: 50%;
+    border: solid 2px black;
+    max-width: 50px;
+    max-height: 50px;
+    vertical-align: middle;
+  }
+  #title-text {
+    vertical-align: middle;
+  }
+  .title {
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
+  }
+  .nav-link {
+    -webkit-box-flex: 11%;
+        -ms-flex: 11%;
+            flex: 11%;
+  }
+  #nav-vote {
+    -webkit-box-flex: 26%;
+        -ms-flex: 26%;
+            flex: 26%;
+  }
+  #vote-button {
+    margin: 2%;
+    max-width: 170px;
+    border: black solid 2px;
+  }
+  body {
+    font-family: 'Bubblegum Sans', cursive;
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px #000000;
+    -webkit-text-stroke: 1px black;
+    font-weight: initial;
+    background-color: #F5CE92;
+    text-align: center;
+    margin: 0px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1023px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #5F6363;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav a {
+    font-family: 'Bubblegum Sans', cursive;
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px #000000;
+    -webkit-text-stroke: 1px black;
+    font-weight: initial;
+    text-decoration: none;
+  }
+  #president-guinea-pig {
+    margin: 2%;
+    border-radius: 50%;
+    border: solid 2px black;
+    max-width: 95px;
+    max-height: 95px;
+    vertical-align: middle;
+  }
+  #title-text {
+    vertical-align: middle;
+  }
+  .title {
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
+  }
+  .nav-link {
+    -webkit-box-flex: 11%;
+        -ms-flex: 11%;
+            flex: 11%;
+  }
+  #nav-vote {
+    -webkit-box-flex: 26%;
+        -ms-flex: 26%;
+            flex: 26%;
+  }
+  #vote-button {
+    margin: 2%;
+    max-width: 170px;
+    border: black solid 2px;
+  }
+  body {
+    font-family: 'Bubblegum Sans', cursive;
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px #000000;
+    -webkit-text-stroke: 1px black;
+    font-weight: initial;
+    background-color: #F5CE92;
+    text-align: center;
+    margin: 0px;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #5F6363;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav a {
+    font-family: 'Bubblegum Sans', cursive;
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px #000000;
+    -webkit-text-stroke: 1px black;
+    font-weight: initial;
+    text-decoration: none;
+  }
+  #president-guinea-pig {
+    margin: 2%;
+    border-radius: 50%;
+    border: solid 2px black;
+    max-width: 95px;
+    max-height: 95px;
+    vertical-align: middle;
+  }
+  #title-text {
+    vertical-align: middle;
+  }
+  .title {
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
+  }
+  .nav-link {
+    -webkit-box-flex: 11%;
+        -ms-flex: 11%;
+            flex: 11%;
+  }
+  #nav-vote {
+    -webkit-box-flex: 26%;
+        -ms-flex: 26%;
+            flex: 26%;
+  }
+  #vote-button {
+    margin: 2%;
+    max-width: 170px;
+    border: black solid 2px;
+  }
+  body {
+    font-family: 'Bubblegum Sans', cursive;
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px #000000;
+    -webkit-text-stroke: 1px black;
+    font-weight: initial;
+    background-color: #F5CE92;
+    text-align: center;
+    margin: 0px;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

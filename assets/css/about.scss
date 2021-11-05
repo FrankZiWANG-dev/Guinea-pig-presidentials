@@ -1,0 +1,35 @@
+//project page
+#project-container{
+    margin: 3% 10% 3% 10%;
+}
+#project1{
+    display: flex;
+}
+#project-logo1{
+    flex: 30%;
+    max-width: 300px;
+    border-radius: 50%;
+    border: white solid 3px;
+}
+#project-text1{
+    flex: 70%;
+    align-self: center;
+    margin: 0% 5% 0% 5%;
+}
+
+#project2{
+    display: flex;
+}
+#project-logo2{
+    flex: 30%;
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: white solid 3px;
+}
+#project-text2{
+    flex: 70%;
+    align-self: center;
+    margin: 0% 5% 0% 5%;
+}

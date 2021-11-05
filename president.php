@@ -1,8 +1,8 @@
 <?php
 include_once "parts/nav.php";
 ?>
-    
-    <link rel="stylesheet" href="assets/css/vote.css">
+
+    <link rel="stylesheet" href="assets/css/president.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

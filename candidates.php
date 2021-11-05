@@ -2,15 +2,7 @@
 include_once "parts/nav.php";
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guinea Pig Presidentials!</title>
-    
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/candidates.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +17,11 @@ include_once "parts/nav.php";
     
     <div id="candidates-intro"> 
         <div class="candidate-box">
-            <h2 class="candidate-box-title">Boulette</h2>
+            <div class="candidate-box-title">
+                <div class="candidate-box-title-side"></div>
+                <div class="candidate-box-title-middle"><h2 class="candidate-box-title-text">Boulette</h2></div>
+                <div class="candidate-box-title-side"></div>
+            </div>
             <div class="candidate-intro-pic-bg">
                 <img src="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Boulette-1.JPG?raw=true" alt="Boulette-1" class="candidate-intro-pic">
             </div>
@@ -33,7 +29,11 @@ include_once "parts/nav.php";
         </div>
         
         <div class="candidate-box">
-            <h2 class="candidate-box-title">Nugget</h2>
+            <div class="candidate-box-title">
+                <div class="candidate-box-title-side"></div>
+                <div class="candidate-box-title-middle"><h2 class="candidate-box-title-text">Nugget</h2></div>
+                <div class="candidate-box-title-side"></div>
+            </div>
             <div class="candidate-intro-pic-bg">
                 <img src="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Nugget-1.JPG?raw=true" alt="Nugget-1" class="candidate-intro-pic">
             </div>
@@ -41,7 +41,11 @@ include_once "parts/nav.php";
         </div>
         
         <div class="candidate-box">
-            <h2 class="candidate-box-title">Burrito</h2>
+            <div class="candidate-box-title">
+                <div class="candidate-box-title-side"></div>
+                <div class="candidate-box-title-middle"><h2 class="candidate-box-title-text">Burrito</h2></div>
+                <div class="candidate-box-title-side"></div>
+            </div>
             <div class="candidate-intro-pic-bg">
                 <img src="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Burrito-1.JPG?raw=true" alt="Burrito-1" class="candidate-intro-pic">
             </div>

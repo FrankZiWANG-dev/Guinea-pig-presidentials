@@ -1,0 +1,56 @@
+//candidates page
+#candidates-container{
+    margin: 3% 10% 3% 10%;
+}
+#candidates-intro{
+    display: flex;
+    align-self:center;
+    align-content: center;
+}
+.candidate-box{
+    background-image: url("https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/candidate-bg-bottom.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border: solid black 2px;
+    margin: 0% 1% 0% 1%;
+    max-width: 400px;
+    
+    flex: 33%;
+}
+.candidate-box-title{
+    background-image: url("https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/candidate-bg-top-blue.png?raw=true");
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    align-content: center;
+}
+.candidate-box-title-text{
+    margin: 0;
+    padding: 1%;
+}
+.candidate-box-title-side{
+    background-image: url("https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/candidate-bg-top-stars.png?raw=true");
+    background-repeat: no-repeat;
+    background-size:contain;
+    flex: 50%;
+}
+.candidate-box-title-middle{
+    margin: 0;
+    padding: 1%;
+    flex: 25%;
+}
+.candidate-intro-pic-bg{
+    background-image: url("https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/candidate-bg-middle.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+.candidate-intro-pic{
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    // border-radius: 50%;
+    border: white solid 3px;
+    margin: 2% 0% 2% 0%;
+}
