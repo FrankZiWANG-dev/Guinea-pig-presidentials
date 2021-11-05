@@ -2,7 +2,6 @@
 @mixin font {
     font-family: 'Bubblegum Sans', cursive;
     color: white;
-    font-size: 18px;
     text-shadow: 2px 2px 2px #000000;
     -webkit-text-stroke: 1px black;
     font-weight:initial;
@@ -10,24 +9,53 @@
 @mixin container {
     margin: 3%;
 }
+#title2 {
+    display: none;
+}
 #navHamburger {
     display:none;
 }
-//smartphone
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-        //nav bar
+
+//MOBILE FIRST
+@mixin mobile {
+    //nav bar
     #nav{
         display: none;
     }
+    #title2 {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        margin: 3%;
+        a{
+            @include font;
+            text-decoration: none;
+            flex: 85%;
+        }
+    }
+    #hamburgerIcon{
+        flex: 15%;
+        min-width:10%;
+        max-width: 50px;
+        max-height: 50px;
+    }
     #navHamburger{
-        display: block;
+        display: flex;
+        background-color: #5F6363;
+        border-radius: 30px;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 10% 0 10%;
+        overflow: hidden;
+        height: 0px;
+        transition: 0.4s ease-in-out;
         
         a {
         @include font;
         text-decoration: none;
         }
     }
-    #president-guinea-pig{
+    #president-guinea-pig2{
         margin: 2%;
         border-radius: 50%;
         border: solid 2px black;
@@ -35,24 +63,16 @@
         max-height: 50px;
         vertical-align: middle;
     }
-    #title-text{
+    .title-text2{
         vertical-align: middle;
+        font-size: 24px; 
     }
-    .title {
-        flex: 30%;
-    }
-    .nav-link {
-        flex: 11%;
-    }
-    #nav-vote {
-        flex: 26%;
-    }
-    #vote-button {
+    
+    #vote-button2 {
         margin: 2%;
-        max-width: 170px;
+        width: 100px;
         border: black solid 2px;
     }
-
 
     //body
     body {
@@ -63,66 +83,37 @@
     }
 }
 
+//smartphone
+@media only screen and (min-width : 320px) and (max-width : 480px) {    
+    @include mobile;
+}
+
 //tablet
-@media only screen and (min-device-width : 481px) and (max-device-width : 1023px) {
-    //nav bar
-    nav{
-        display: flex;
-        background-color: #5F6363;
-        align-items: center;
-        a {
-        @include font;
-        text-decoration: none;
-        }
+@media only screen and (min-width : 481px) and (max-width : 1023px) {
+    @include mobile;
+    .title-text2{
+        font-size: 34px; 
     }
-    #president-guinea-pig{
-        margin: 2%;
-        border-radius: 50%;
-        border: solid 2px black;
-        max-width: 95px;
-        max-height: 95px;
-        vertical-align: middle;
-    }
-    #title-text{
-        vertical-align: middle;
-    }
-    .title {
-        flex: 30%;
-    }
-    .nav-link {
-        flex: 11%;
-    }
-    #nav-vote {
-        flex: 26%;
-    }
-    #vote-button {
-        margin: 2%;
-        max-width: 170px;
-        border: black solid 2px;
-    }
-
-
-    //body
-    body {
-        @include font;
-        background-color: #F5CE92;
-        text-align: center;
-        margin: 0px;
+    #navHamburger{
+        font-size: 20px;
     }
 }
 
 //desktop
-@media only screen and (min-device-width : 1024px) {
+@media only screen and (min-width : 1024px) {
     //nav bar
     nav{
         display: flex;
         background-color: #5F6363;
         align-items: center;
+        justify-content: space-between;
         a {
         @include font;
         text-decoration: none;
+        font-size: 22px;
         }
     }
+    
     #president-guinea-pig{
         margin: 2%;
         border-radius: 50%;
@@ -131,25 +122,27 @@
         max-height: 95px;
         vertical-align: middle;
     }
-    #title-text{
+    .title-text{
         vertical-align: middle;
-    }
-    .title {
-        flex: 30%;
+        font-size: 26px;
+        display: flex;
     }
     .nav-link {
-        flex: 11%;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     #nav-vote {
-        flex: 26%;
+        margin-left: 10px;
+        margin-right: 20px;
     }
     #vote-button {
         margin: 2%;
-        max-width: 170px;
+        max-width: 120px;
         border: black solid 2px;
     }
-
-
+    #hamburgerIcon{
+        display: none;
+    }
     //body
     body {
         @include font;

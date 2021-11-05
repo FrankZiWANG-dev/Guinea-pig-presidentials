@@ -1,24 +1,72 @@
+#title2 {
+  display: none;
+}
+
 #navHamburger {
   display: none;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   #nav {
     display: none;
   }
+  #title2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+    margin: 3%;
+  }
+  #title2 a {
+    font-family: 'Bubblegum Sans', cursive;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+    -webkit-text-stroke: 1px black;
+    font-weight: initial;
+    text-decoration: none;
+    -webkit-box-flex: 85%;
+        -ms-flex: 85%;
+            flex: 85%;
+  }
+  #hamburgerIcon {
+    -webkit-box-flex: 15%;
+        -ms-flex: 15%;
+            flex: 15%;
+    min-width: 10%;
+    max-width: 50px;
+    max-height: 50px;
+  }
   #navHamburger {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #5F6363;
+    border-radius: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 10% 0 10%;
+    overflow: hidden;
+    height: 0px;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
   #navHamburger a {
     font-family: 'Bubblegum Sans', cursive;
     color: white;
-    font-size: 18px;
     text-shadow: 2px 2px 2px #000000;
     -webkit-text-stroke: 1px black;
     font-weight: initial;
     text-decoration: none;
   }
-  #president-guinea-pig {
+  #president-guinea-pig2 {
     margin: 2%;
     border-radius: 50%;
     border: solid 2px black;
@@ -26,33 +74,18 @@
     max-height: 50px;
     vertical-align: middle;
   }
-  #title-text {
+  .title-text2 {
     vertical-align: middle;
+    font-size: 24px;
   }
-  .title {
-    -webkit-box-flex: 30%;
-        -ms-flex: 30%;
-            flex: 30%;
-  }
-  .nav-link {
-    -webkit-box-flex: 11%;
-        -ms-flex: 11%;
-            flex: 11%;
-  }
-  #nav-vote {
-    -webkit-box-flex: 26%;
-        -ms-flex: 26%;
-            flex: 26%;
-  }
-  #vote-button {
+  #vote-button2 {
     margin: 2%;
-    max-width: 170px;
+    width: 100px;
     border: black solid 2px;
   }
   body {
     font-family: 'Bubblegum Sans', cursive;
     color: white;
-    font-size: 18px;
     text-shadow: 2px 2px 2px #000000;
     -webkit-text-stroke: 1px black;
     font-weight: initial;
@@ -62,60 +95,86 @@
   }
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1023px) {
-  nav {
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  #nav {
+    display: none;
+  }
+  #title2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+    margin: 3%;
+  }
+  #title2 a {
+    font-family: 'Bubblegum Sans', cursive;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+    -webkit-text-stroke: 1px black;
+    font-weight: initial;
+    text-decoration: none;
+    -webkit-box-flex: 85%;
+        -ms-flex: 85%;
+            flex: 85%;
+  }
+  #hamburgerIcon {
+    -webkit-box-flex: 15%;
+        -ms-flex: 15%;
+            flex: 15%;
+    min-width: 10%;
+    max-width: 50px;
+    max-height: 50px;
+  }
+  #navHamburger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     background-color: #5F6363;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    border-radius: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 10% 0 10%;
+    overflow: hidden;
+    height: 0px;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
-  nav a {
+  #navHamburger a {
     font-family: 'Bubblegum Sans', cursive;
     color: white;
-    font-size: 18px;
     text-shadow: 2px 2px 2px #000000;
     -webkit-text-stroke: 1px black;
     font-weight: initial;
     text-decoration: none;
   }
-  #president-guinea-pig {
+  #president-guinea-pig2 {
     margin: 2%;
     border-radius: 50%;
     border: solid 2px black;
-    max-width: 95px;
-    max-height: 95px;
+    max-width: 50px;
+    max-height: 50px;
     vertical-align: middle;
   }
-  #title-text {
+  .title-text2 {
     vertical-align: middle;
+    font-size: 24px;
   }
-  .title {
-    -webkit-box-flex: 30%;
-        -ms-flex: 30%;
-            flex: 30%;
-  }
-  .nav-link {
-    -webkit-box-flex: 11%;
-        -ms-flex: 11%;
-            flex: 11%;
-  }
-  #nav-vote {
-    -webkit-box-flex: 26%;
-        -ms-flex: 26%;
-            flex: 26%;
-  }
-  #vote-button {
+  #vote-button2 {
     margin: 2%;
-    max-width: 170px;
+    width: 100px;
     border: black solid 2px;
   }
   body {
     font-family: 'Bubblegum Sans', cursive;
     color: white;
-    font-size: 18px;
     text-shadow: 2px 2px 2px #000000;
     -webkit-text-stroke: 1px black;
     font-weight: initial;
@@ -123,9 +182,15 @@
     text-align: center;
     margin: 0px;
   }
+  .title-text2 {
+    font-size: 34px;
+  }
+  #navHamburger {
+    font-size: 20px;
+  }
 }
 
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -134,15 +199,18 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   nav a {
     font-family: 'Bubblegum Sans', cursive;
     color: white;
-    font-size: 18px;
     text-shadow: 2px 2px 2px #000000;
     -webkit-text-stroke: 1px black;
     font-weight: initial;
     text-decoration: none;
+    font-size: 22px;
   }
   #president-guinea-pig {
     margin: 2%;
@@ -152,33 +220,32 @@
     max-height: 95px;
     vertical-align: middle;
   }
-  #title-text {
+  .title-text {
     vertical-align: middle;
-  }
-  .title {
-    -webkit-box-flex: 30%;
-        -ms-flex: 30%;
-            flex: 30%;
+    font-size: 26px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .nav-link {
-    -webkit-box-flex: 11%;
-        -ms-flex: 11%;
-            flex: 11%;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   #nav-vote {
-    -webkit-box-flex: 26%;
-        -ms-flex: 26%;
-            flex: 26%;
+    margin-left: 10px;
+    margin-right: 20px;
   }
   #vote-button {
     margin: 2%;
-    max-width: 170px;
+    max-width: 120px;
     border: black solid 2px;
+  }
+  #hamburgerIcon {
+    display: none;
   }
   body {
     font-family: 'Bubblegum Sans', cursive;
     color: white;
-    font-size: 18px;
     text-shadow: 2px 2px 2px #000000;
     -webkit-text-stroke: 1px black;
     font-weight: initial;

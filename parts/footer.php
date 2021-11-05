@@ -8,10 +8,17 @@ echo "<footer>"
         ."<a href='vote.php'> Vote! </a>"
     ."</footer>"
     ."<script>
-    if (window.innerWidth < 480 ) {
-        document.getElementById('nav').display = none;
-        document.getElementById('hamburger').display = block;
-    }
+        let hamburger = document.getElementById('hamburgerIcon');
+        let nav = document.getElementById('navHamburger');
+        let number = 0;
+        hamburger.addEventListener('click', () => {
+            nav.setAttribute('style', 'height: 200px ; padding: 5px;');
+            number++;
+            if (number == 2){
+                nav.setAttribute('style', 'height: 0px ; padding: 0px');
+            number = 0;
+            }
+        });
     </script>"
     ."</body>"
 ."</html>";
