@@ -27,6 +27,12 @@ echo "<footer>"
             else
                 return false ;
         }
+
+        function ChangeImage(){
+            var img = document.getElementById('vote-piggy-image');
+            img.src = 'https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/'+ this.value;
+        }
+        document.getElementById('Piggy').onchange = ChangeImage;
     </script>"
     ."</body>"
 ."</html>";

@@ -101,7 +101,7 @@ function invalidEmail(){
 
 <div id="container" role="contact-section">
 
-<form method="get" id='form' action="contact.php" role="contact-form">
+<form method="post" id='form' action="contact.php" role="contact-form">
     
         <label for="firstName"> First Name: </label>
         <input type="text" name="firstName" placeholder='Type in your first name' onfocus="this.value=''" <?php checkEmpty($firstName);?> >

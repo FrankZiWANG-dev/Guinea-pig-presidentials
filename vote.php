@@ -1,5 +1,20 @@
 <?php
 include_once "parts/nav.php";
+
+try {
+    $bdd = new PDO('mysql:host=localhost;port=3306;dbname=guinea-pig-presidentials;charset=utf8', 'root', 'root');
+}
+catch(Exception $e){
+    die ('Erreur: '.$e->getMessage());
+}
+
+if (isset($_POST['vote'])){
+    $sql='SELECT Votes FROM results WHERE Name = ?';
+    $votes = $bdd->prepare($sql) -> execute([$_POST["Piggy"]]);
+    $votes++;
+    $sql2= 'UPDATE results SET Votes = ? WHERE Name = ?';
+    $bdd->prepare($sql2) -> execute([$votes,$_POST["Piggy"]]);
+}
 ?>
     
     <link rel="stylesheet" href="assets/css/vote.css">
@@ -9,25 +24,24 @@ include_once "parts/nav.php";
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<div id="home-container">
-    <img src="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/home-logo.png?raw=true" alt="home-guinea-pig-logo" id="home-logo">
-    <div id="home-text">
-        <h1>Time to elect a new Supreme Overlord !!</h1>
-
-        <p>The Revolution has come, humans !</p>
-
-        <p>The guinea pigs have taken over “the Apartment” !</br>
-        Learn more about the circumstances of this glorious event and its participants, and vote!</br>
-        You may also contact the former master of these lands, who was charged with creating this website.</br>
-
-        <p>Sincerely (not really) yours,</br>
-        The Guinea Pigs.</p>
-    </div>
+<div id="vote-container">
+    <h1>Time to cast your vote !</h1>
+    <form action="vote.php" method="post">
+        <label for="Piggy"> Choose your favorie piggy: </label>
+        <br/>
+        <select name="Piggy">
+            <option value="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/President-guinea-pig.jpg?raw=true" disabled selected> Choose wisely </option>
+            <option value="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Boulette-1.jpg?raw=true"> Boulette </option>
+            <option value="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Nugget-1.jpg?raw=true"> Nugget </option>
+            <option value="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Burrito-1.jpg?raw=true"> Burrito </option>
+        </select>
+        <br/>
+        <img id="vote-piggy-image" src="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/President-guinea-pig.jpg?raw=true">
+        <br/>
+        <input type="submit" name="vote" value="Cast your vote !">
+    
+    </form>
 </div>
-</body>
-</html>
-
 <?php
 include_once "parts/footer.php";
 ?>
