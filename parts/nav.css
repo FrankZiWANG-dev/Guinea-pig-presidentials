@@ -202,6 +202,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    font-size: 36px;
   }
   nav a {
     font-family: 'Bubblegum Sans', cursive;
@@ -210,7 +211,6 @@
     -webkit-text-stroke: 1px black;
     font-weight: initial;
     text-decoration: none;
-    font-size: 22px;
   }
   #president-guinea-pig {
     margin: 2%;
@@ -222,7 +222,7 @@
   }
   .title-text {
     vertical-align: middle;
-    font-size: 26px;
+    font-size: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

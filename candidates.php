@@ -18,9 +18,7 @@ include_once "parts/nav.php";
     <div id="candidates-intro"> 
         <div class="candidate-box">
             <div class="candidate-box-title">
-                <div class="candidate-box-title-side"></div>
-                <div class="candidate-box-title-middle"><h2 class="candidate-box-title-text">Boulette</h2></div>
-                <div class="candidate-box-title-side"></div>
+                <h2 class="candidate-box-title-text">Boulette</h2>
             </div>
             <div class="candidate-intro-pic-bg">
                 <img src="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Boulette-1.JPG?raw=true" alt="Boulette-1" class="candidate-intro-pic">
@@ -30,9 +28,7 @@ include_once "parts/nav.php";
         
         <div class="candidate-box">
             <div class="candidate-box-title">
-                <div class="candidate-box-title-side"></div>
-                <div class="candidate-box-title-middle"><h2 class="candidate-box-title-text">Nugget</h2></div>
-                <div class="candidate-box-title-side"></div>
+                <h2 class="candidate-box-title-text">Nugget</h2>
             </div>
             <div class="candidate-intro-pic-bg">
                 <img src="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Nugget-1.JPG?raw=true" alt="Nugget-1" class="candidate-intro-pic">
@@ -42,9 +38,7 @@ include_once "parts/nav.php";
         
         <div class="candidate-box">
             <div class="candidate-box-title">
-                <div class="candidate-box-title-side"></div>
-                <div class="candidate-box-title-middle"><h2 class="candidate-box-title-text">Burrito</h2></div>
-                <div class="candidate-box-title-side"></div>
+                <h2 class="candidate-box-title-text">Burrito</h2>
             </div>
             <div class="candidate-intro-pic-bg">
                 <img src="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Burrito-1.JPG?raw=true" alt="Burrito-1" class="candidate-intro-pic">
@@ -53,8 +47,7 @@ include_once "parts/nav.php";
         </div>
     </div>
 </div>
-</body>
-</html>
+
 
 <?php
 include_once "parts/footer.php";

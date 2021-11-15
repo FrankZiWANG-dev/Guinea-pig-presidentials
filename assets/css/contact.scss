@@ -1,0 +1,171 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #intro{
+        h1{
+            margin: 10px;
+        }
+        p {
+            font-size: 22px;
+            margin: 5px;
+        }       
+    }
+    #container{
+        font-size: 20px;
+        text-align: right;
+
+        margin-top: 40px;
+        margin-right: 9%;
+        margin-left: auto;
+
+        input{
+            font-family: 'Bubblegum Sans';
+            font-size: 20px;
+            width: 60%;
+            margin-left: 1%;
+            margin-top: 10px;
+            border-radius: 20px;
+            padding-left: 5px;
+        }
+        select{
+            font-family: 'Bubblegum Sans';
+            font-size: 20px;
+            width: 62%;
+            margin-left: 1%;
+            margin-top: 10px;
+            border-radius: 20px;
+            border: black solid 2px;
+            padding-left: 5px;
+        }
+        option{
+            font-family: 'Bubblegum Sans';
+            font-size: 20px;
+            border-radius: 20px;
+            padding-left: 5px;
+        }
+        button{
+            font-family: 'Bubblegum Sans';
+            font-size: 21px;
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 30px;
+        }
+        #message{
+            height: 150px;
+        }
+    }
+}
+@media only screen and (min-device-width : 481px) and (max-device-width : 1023px) {
+    #intro{
+        h1{
+            font-size:48px;
+            margin: 10px;
+        }
+        p {
+            font-size: 36px;
+            margin: 5px;
+        }       
+    }
+    #container{
+        font-size: 36px;
+        text-align: right;
+
+        margin-top: 40px;
+        margin-right: 9%;
+        margin-left: auto;
+
+        input{
+            font-family: 'Bubblegum Sans';
+            font-size: 36px;
+            width: 60%;
+            margin-left: 1%;
+            margin-top: 10px;
+            border-radius: 20px;
+            padding-left: 5px;
+        }
+        select{
+            font-family: 'Bubblegum Sans';
+            font-size: 36px;
+            width: 62%;
+            margin-left: 1%;
+            margin-top: 10px;
+            border-radius: 20px;
+            border: black solid 2px;
+            padding-left: 5px;
+        }
+        option{
+            font-family: 'Bubblegum Sans';
+            font-size: 36px;
+            border-radius: 20px;
+            padding-left: 5px;
+        }
+        button{
+            font-family: 'Bubblegum Sans';
+            font-size: 32px;
+            margin-left: 25%;
+            margin-right: 26%;
+            margin-top: 30px;
+        }
+        #message{
+            height: 250px;
+        }
+    }
+}
+@media only screen and (min-device-width : 1024px) {
+    #intro{
+        h1{
+            font-size: 46px;
+            margin: 10px;
+        }
+        p {
+            font-size: 36px;
+            margin: 5px;
+        }       
+    }
+    #container{
+        font-size: 34px;
+        text-align: right;
+
+        margin-top: 25px;
+        margin-right: 24%;
+        margin-left: auto;
+
+        input{
+            font-family: 'Bubblegum Sans';
+            font-size: 32px;
+            width: 60%;
+            margin-left: 1%;
+            margin-top: 10px;
+            border-radius: 20px;
+            padding-left: 5px;
+            height: 50px;
+        }
+        select{
+            font-family: 'Bubblegum Sans';
+            font-size: 32px;
+            width: 61%;
+            margin-left: 1%;
+            margin-top: 10px;
+            border-radius: 20px;
+            border: black solid 2px;
+            padding-left: 5px;
+            height: 50px;
+        }
+        option{
+            font-family: 'Bubblegum Sans';
+            font-size: 32px;
+            border-radius: 20px;
+            padding-left: 5px;
+            height: 50px;
+        }
+        button{
+            font-family: 'Bubblegum Sans';
+            font-size: 24px;
+            margin-left: 25%;
+            margin-right: 26%;
+            margin-top: 30px;
+            height: 40px;
+        }
+        #message{
+            height: 280px;
+        }
+    }
+}

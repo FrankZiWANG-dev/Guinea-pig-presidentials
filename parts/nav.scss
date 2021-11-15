@@ -107,10 +107,10 @@
         background-color: #5F6363;
         align-items: center;
         justify-content: space-between;
+        font-size: 36px;
         a {
         @include font;
         text-decoration: none;
-        font-size: 22px;
         }
     }
     
@@ -124,7 +124,7 @@
     }
     .title-text{
         vertical-align: middle;
-        font-size: 26px;
+        font-size: 30px;
         display: flex;
     }
     .nav-link {

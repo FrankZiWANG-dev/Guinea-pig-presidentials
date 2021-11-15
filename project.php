@@ -12,7 +12,7 @@ include_once "parts/nav.php";
 
 <div id="project-container">
 
-<h1>About the project</h1>
+<h1 id="project-title">About the project</h1>
 
     <div id="project1">
         <div id="project-text1">
@@ -23,7 +23,9 @@ include_once "parts/nav.php";
 
     <div id="project2">
         
-        <img src="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/3-piggies-back.JPG?raw=true" alt="guinea-pigs" id="project-logo2">
+        <div>
+            <img src="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/3-piggies-back.JPG?raw=true" alt="guinea-pigs" id="project-logo2">
+        </div>
         <div id="project-text2">
             <p>As a guinea pig owner and enthusiast, I jumped on the occasion to create a fun poll system for the visitors of this website to pick a favorite guinea pig and elect a “president”.</p>
             <p>Let the ever running presidential race begin!</p>

@@ -19,6 +19,14 @@ echo "<footer>"
             number = 0;
             }
         });
+
+        function confirmSubmit(){
+            var agree=confirm('Please confirm your message is ready to be sent');
+            if (agree)
+                return true ;
+            else
+                return false ;
+        }
     </script>"
     ."</body>"
 ."</html>";
