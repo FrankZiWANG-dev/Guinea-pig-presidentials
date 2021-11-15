@@ -1,57 +1,97 @@
-#project-container {
-  margin: 3% 10% 3% 10%;
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #project-container {
+    margin: 3% 10% 3% 10%;
+    font-size: 24px;
+  }
+  #project1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #222121e7;
+    background-image: url("https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Becode-logo.png?raw=true");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    margin-bottom: 25px;
+  }
+  #project-logo1 {
+    display: none;
+  }
+  #project-text1 {
+    -webkit-box-flex: 70%;
+        -ms-flex: 70%;
+            flex: 70%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0% 5% 0% 5%;
+  }
+  #project2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url("https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/3-piggies-back.JPG?raw=true");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+  }
+  #project-logo2 {
+    display: none;
+  }
+  #project-text2 {
+    -webkit-box-flex: 70%;
+        -ms-flex: 70%;
+            flex: 70%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0% 5% 0% 5%;
+  }
 }
 
-#project1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#project-logo1 {
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
-  max-width: 300px;
-  border-radius: 50%;
-  border: white solid 3px;
-}
-
-#project-text1 {
-  -webkit-box-flex: 70%;
-      -ms-flex: 70%;
-          flex: 70%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin: 0% 5% 0% 5%;
-}
-
-#project2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#project-logo2 {
-  -webkit-box-flex: 30%;
-      -ms-flex: 30%;
-          flex: 30%;
-  max-width: 300px;
-  max-height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 50%;
-  border: white solid 3px;
-}
-
-#project-text2 {
-  -webkit-box-flex: 70%;
-      -ms-flex: 70%;
-          flex: 70%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin: 0% 5% 0% 5%;
+@media only screen and (min-device-width: 481px) {
+  #project-title {
+    font-size: 52px;
+  }
+  #project-container {
+    margin: 3% 10% 3% 10%;
+    font-size: 32px;
+  }
+  #project1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  #project-logo1 {
+    max-width: 200px;
+    border-radius: 50%;
+    border: white solid 3px;
+  }
+  #project-text1 {
+    margin: 0% 5% 0% 5%;
+  }
+  #project2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  #project-logo2 {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: white solid 3px;
+  }
+  #project-text2 {
+    margin: 0% 5% 0% 5%;
+  }
 }
 /*# sourceMappingURL=about.css.map */
