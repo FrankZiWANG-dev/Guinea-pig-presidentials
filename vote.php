@@ -26,19 +26,20 @@ if (isset($_POST['vote'])){
 <body>
 <div id="vote-container">
     <h1>Time to cast your vote !</h1>
-    <form action="vote.php" method="post">
-        <label for="Piggy"> Choose your favorie piggy: </label>
+    <form id='vote-form' action="vote.php" method="post">
+        <label id="vote-label" for="Piggy"> Choose your favorie piggy: </label>
         <br/>
-        <select name="Piggy">
-            <option value="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/President-guinea-pig.jpg?raw=true" disabled selected> Choose wisely </option>
-            <option value="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Boulette-1.jpg?raw=true"> Boulette </option>
-            <option value="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Nugget-1.jpg?raw=true"> Nugget </option>
-            <option value="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Burrito-1.jpg?raw=true"> Burrito </option>
+        <select name="Piggy" id="Piggy" onchange="changeImage()">
+            <option value="" disabled selected> Your choice </option>
+            <option value="Boulette"> Boulette </option>
+            <option value="Nugget"> Nugget </option>
+            <option value="Burrito"> Burrito </option>
         </select>
         <br/>
-        <img id="vote-piggy-image" src="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/President-guinea-pig.jpg?raw=true">
-        <br/>
-        <input type="submit" name="vote" value="Cast your vote !">
+        <div id="vote-image-container">
+            <img id="vote-piggy-image" src="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/President-guinea-pig.jpg?raw=true">
+        </div>
+        <input type="submit" id="vote-button" name="vote" onclick="thankVoter()" value="Cast your vote !">
     
     </form>
 </div>

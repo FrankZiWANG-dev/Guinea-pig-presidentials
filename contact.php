@@ -48,7 +48,7 @@ if(filter_has_var(INPUT_GET, 'submit')){
                     $phpmailer->Username = '3a523c273edefe';
                     $phpmailer->Password = 'd6c06b4ce1aea8';
                 
-                    $phpmailer->setFrom($email, 'Guinea pig presidentials question!');
+                    $phpmailer->setFrom($email, 'Guinea pig presidentials');
                     $phpmailer->addAddress('frankziwang.dev@gmail.com');
             
                     $phpmailer->isHTML(true);

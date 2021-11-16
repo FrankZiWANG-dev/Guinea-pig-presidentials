@@ -20,6 +20,26 @@ echo "<footer>"
             }
         });
 
+        function changeImage(){
+            switch (document.getElementById('Piggy').value) {
+                 case 'Boulette':
+                     document.getElementById('vote-piggy-image').src = 'https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Boulette-1.JPG?raw=true';
+                     break;
+                 case 'Nugget':
+                     document.getElementById('vote-piggy-image').src = 'https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Nugget-1.JPG?raw=true';
+                     break;
+                 case 'Burrito':
+                     document.getElementById('vote-piggy-image').src = 'https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Burrito-1.JPG?raw=true';
+                     break;
+                 default:
+                     document.getElementById('vote-piggy-image').src = 'https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/President-guinea-pig.jpg?raw=true';
+             };
+        }
+        
+        function thankVoter(){
+            window.alert('Thanks for voting!');
+            window.location.href='president.php';
+        }
         function confirmSubmit(){
             var agree=confirm('Please confirm your message is ready to be sent');
             if (agree)
@@ -28,11 +48,6 @@ echo "<footer>"
                 return false ;
         }
 
-        function ChangeImage(){
-            var img = document.getElementById('vote-piggy-image');
-            img.src = 'https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/'+ this.value;
-        }
-        document.getElementById('Piggy').onchange = ChangeImage;
     </script>"
     ."</body>"
 ."</html>";
