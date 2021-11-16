@@ -12,8 +12,8 @@
     -webkit-box-flex: 10%;
         -ms-flex: 10%;
             flex: 10%;
-    max-width: 98%;
-    margin: 0;
+    width: 90%;
+    margin: 0 auto 0 auto;
   }
   #home-text {
     -webkit-box-flex: 90%;

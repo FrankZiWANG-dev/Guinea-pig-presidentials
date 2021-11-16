@@ -47,7 +47,26 @@ echo "<footer>"
             else
                 return false ;
         }
-
+        function changeImage(){
+            let president = String(document.getElementById('president-name').innerText);
+            switch (president) {
+                case 'Boulette':
+                    document.getElementById('president-img').src = 'https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Boulette-1.JPG?raw=true';
+                    break;
+                case 'Nugget':
+                    document.getElementById('president-img').src = 'https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Nugget-1.JPG?raw=true';
+                    break;
+                case 'Burrito':
+                    document.getElementById('president-img').src = 'https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/Burrito-1.JPG?raw=true';
+                    break;
+                default:
+                    document.getElementById('president-img').src = 'https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/President-guinea-pig.jpg?raw=true';
+            };
+        };
+        window.onload = function() {
+            changeImage();
+            window.setInterval('changeImage()', 5000);
+        }
     </script>"
     ."</body>"
 ."</html>";

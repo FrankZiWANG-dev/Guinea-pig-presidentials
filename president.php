@@ -1,7 +1,28 @@
 <?php
 include_once "parts/nav.php";
-?>
 
+try {
+    $bdd = new PDO('mysql:host=localhost;port=3306;dbname=guinea-pig-presidentials;charset=utf8', 'root', 'root');
+}
+catch(Exception $e){
+    die ('Erreur: '.$e->getMessage());
+}
+
+$sql= $bdd->query('SELECT * FROM results');
+$sql->execute();
+$data=$sql->fetchAll();
+$highest = 0;
+$president = "Me";
+
+for ($x=0; $x<sizeOf($data); $x++){
+    if ($data[$x][1] > $highest){
+        $highest = $data[$x][1];
+        $president = $data[$x][0];
+    }
+}
+
+?>
+    
     <link rel="stylesheet" href="assets/css/president.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,25 +30,16 @@ include_once "parts/nav.php";
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<div id="home-container">
-    <img src="https://github.com/FrankZiWANG-dev/Guinea-pig-presidentials/blob/master/assets/images/home-logo.png?raw=true" alt="home-guinea-pig-logo" id="home-logo">
-    <div id="home-text">
-        <h1>Time to elect a new Supreme Overlord !!</h1>
-
-        <p>The Revolution has come, humans !</p>
-
-        <p>The guinea pigs have taken over “the Apartment” !</br>
-        Learn more about the circumstances of this glorious event and its participants, and vote!</br>
-        You may also contact the former master of these lands, who was charged with creating this website.</br>
-
-        <p>Sincerely (not really) yours,</br>
-        The Guinea Pigs.</p>
+<div id="president-container">
+    <h1 id='president-title'>BEHOLD!!<br/> Your current Piggy President !</h1>
+    <div id='president-img-box'>
+        <img id='president-img' src=''>
+    </div>
+    <div id='president-info'>
+        <p id='president-name'> <?php echo $president ?> </p>
+        <p id='president-vote'>(Votes: <?php echo $highest ?> )</p>
     </div>
 </div>
-</body>
-</html>
-
 <?php
 include_once "parts/footer.php";
 ?>

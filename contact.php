@@ -9,13 +9,13 @@ use PHPMailer\PHPMailer\Exception;
 require "vendor/autoload.php";
 
 // check if field filled
-if(filter_has_var(INPUT_GET, 'submit')){
+if(filter_has_var(INPUT_POST, 'submit')){
     //variables
-    $firstName = $_GET["firstName"];
-    $lastName = $_GET["lastName"];
-    $email = $_GET["email"];
-    $message = $_GET["message"];
-    $subject = $_GET["subject"];
+    $firstName = $_POST["firstName"];
+    $lastName = $_POST["lastName"];
+    $email = $_POST["email"];
+    $message = $_POST["message"];
+    $subject = $_POST["subject"];
 
     $variables = array ($firstName, $lastName, $email, $message);
     $error= "Please fill this field in.";
@@ -57,7 +57,10 @@ if(filter_has_var(INPUT_GET, 'submit')){
                     <p>'.$message.'</p>';
 
                     $phpmailer->send();
+                    unset($_POST['submit']);
+                    header("location: index.php");
                     echo "<script type='text/javascript'>alert('Your message was delivered!');</script>";
+                    
                 }
                 catch (Exception $e) {
                     echo "<script type='text/javascript'>alert('Sorry, there seems to be an error...');</script>";
@@ -101,7 +104,7 @@ function invalidEmail(){
 
 <div id="container" role="contact-section">
 
-<form method="post" id='form' action="contact.php" role="contact-form">
+<form method="post" id='form' role="contact-form">
     
         <label for="firstName"> First Name: </label>
         <input type="text" name="firstName" placeholder='Type in your first name' onfocus="this.value=''" <?php checkEmpty($firstName);?> >

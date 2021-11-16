@@ -1,0 +1,75 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {    
+    #president-img-box{
+        height: 350px;
+        width: 250px;
+        overflow:hidden;
+        margin-left: auto;
+        margin-right: auto;
+        border: rgba(165, 97, 42, 0.945) double 5px;
+    
+    }
+    #president-img{
+        height: inherit;
+        width: inherit;
+    }
+    #president-info{
+        font-size: 26px;
+    }
+}
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 1023px) {    
+    #president-title{
+        font-size: 48px;
+    }
+    #president-img-box{
+        height: 500px;
+        width: 350px;
+        overflow:hidden;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        border: rgba(165, 97, 42, 0.945) double 5px;
+    
+    }
+    #president-img{
+        max-height: 700px;
+        max-width: 700px;
+        left: -80px;
+        top:-20px;
+        position: absolute;
+    }
+    #president-info{
+        font-size: 36px;
+    }
+    
+}
+
+@media only screen and (min-device-width : 1024px) {    
+    #president-title{
+        font-size: 36px;
+    }
+    #president-img-box{
+        height: 550px;
+        width: 550px;
+        overflow:hidden;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        border: rgba(165, 97, 42, 0.945) double 5px;
+    }
+    #president-img{
+        max-height: 750px;
+        max-width: 750px;
+        left: 0px;
+        top:0px;
+        position: absolute;
+    }
+    #president-info{
+        font-size: 42px;
+        display: flex;
+        justify-content: center;
+        p{
+            margin: 30px;
+        }
+    }
+}
