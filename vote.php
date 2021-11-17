@@ -9,7 +9,7 @@ $cleardb_db = substr($cleardb_url["path"],1);
 $active_group = 'default';
 $query_builder = TRUE;
 // Connect to DB
-$conn = "'mysql:host=".$cleardb_server .";dbname=".$cleardb_db.";charset=utf8', '".$cleardb_username."', '".$cleardb_password ."'";
+$conn = "'mysql:host=".$cleardb_server .";port=3306;dbname=".$cleardb_db.";charset=utf8', '".$cleardb_username."', '".$cleardb_password ."'";
 try {
     $bdd = new PDO($conn);
 }
