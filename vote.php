@@ -1,8 +1,17 @@
 <?php
 include_once "parts/nav.php";
-
+//Get Heroku ClearDB connection information
+$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$cleardb_server = $cleardb_url["host"];
+$cleardb_username = $cleardb_url["user"];
+$cleardb_password = $cleardb_url["pass"];
+$cleardb_db = substr($cleardb_url["path"],1);
+$active_group = 'default';
+$query_builder = TRUE;
+// Connect to DB
+$conn = "'mysql:host=".$cleardb_server .";dbname=".$cleardb_db.";charset=utf8', '".$cleardb_username."', '".$cleardb_password ."'";
 try {
-    $bdd = new PDO('mysql:host=localhost;port=3306;dbname=guinea-pig-presidentials;charset=utf8', 'root', 'root');
+    $bdd = new PDO($conn);
 }
 catch(Exception $e){
     die ('Erreur: '.$e->getMessage());
