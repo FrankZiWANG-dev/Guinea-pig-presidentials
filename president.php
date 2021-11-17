@@ -1,8 +1,13 @@
 <?php
 include_once "parts/nav.php";
 
+$cleardb_server = "eu-cdbr-west-01.cleardb.com";
+$cleardb_username = "b7c97a87c49c7a";
+$cleardb_password = "214091d4";
+$cleardb_db = "heroku_94f1dd5293826c3";
+
 try {
-    $bdd = new PDO('mysql:host=localhost;port=3306;dbname=guinea-pig-presidentials;charset=utf8', 'root', 'root');
+    $bdd = new PDO("mysql:host=$cleardb_server; port=3306 ; dbname=$cleardb_db;", $cleardb_username, $cleardb_password);
 }
 catch(Exception $e){
     die ('Erreur: '.$e->getMessage());
