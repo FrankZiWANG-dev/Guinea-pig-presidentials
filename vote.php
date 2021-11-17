@@ -7,9 +7,8 @@ $cleardb_password = "214091d4";
 $cleardb_db = "heroku_94f1dd5293826c3";
 
 // Connect to DB
-$conn = "'mysql:host=".$cleardb_server .";port=3306;dbname=".$cleardb_db.";charset=utf8', '".$cleardb_username."', '".$cleardb_password ."'";
 try {
-    $bdd = new PDO($conn);
+    $bdd = new PDO("mysql:host=$cleardb_server; port=3306 ; dbname=$cleardb_db;", $cleardb_username, $cleardb_password);
 }
 catch(Exception $e){
     die ('Erreur: '.$e->getMessage());
