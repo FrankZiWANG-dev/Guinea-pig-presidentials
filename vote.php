@@ -1,13 +1,11 @@
 <?php
 include_once "parts/nav.php";
 //Get Heroku ClearDB connection information
-$cleardb_url = parse_url(getenv("mysql://b7c97a87c49c7a:214091d4@eu-cdbr-west-01.cleardb.com/heroku_94f1dd5293826c3?reconnect=true"));
-$cleardb_server = $cleardb_url["host"];
-$cleardb_username = $cleardb_url["user"];
-$cleardb_password = $cleardb_url["pass"];
-$cleardb_db = substr($cleardb_url["path"],1);
-$active_group = 'default';
-$query_builder = TRUE;
+$cleardb_server = "eu-cdbr-west-01.cleardb.com";
+$cleardb_username = "b7c97a87c49c7a";
+$cleardb_password = "214091d4";
+$cleardb_db = "heroku_94f1dd5293826c3";
+
 // Connect to DB
 $conn = "'mysql:host=".$cleardb_server .";port=3306;dbname=".$cleardb_db.";charset=utf8', '".$cleardb_username."', '".$cleardb_password ."'";
 try {
