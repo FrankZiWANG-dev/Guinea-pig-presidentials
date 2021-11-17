@@ -1,7 +1,7 @@
 <?php
 include_once "parts/nav.php";
 //Get Heroku ClearDB connection information
-// $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$cleardb_url = parse_url(getenv("mysql://b7c97a87c49c7a:214091d4@eu-cdbr-west-01.cleardb.com/heroku_94f1dd5293826c3?reconnect=true"));
 $cleardb_server = $cleardb_url["host"];
 $cleardb_username = $cleardb_url["user"];
 $cleardb_password = $cleardb_url["pass"];
