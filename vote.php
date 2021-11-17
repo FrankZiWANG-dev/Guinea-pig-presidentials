@@ -1,8 +1,3 @@
-<script> if (window.localStorage.getItem("Voted") == "Yes"){
-    alert('You already voted!');
-    window.location.href='president.php';
-}
-</script>
 <?php
 include_once "parts/nav.php";
 
@@ -12,6 +7,31 @@ try {
 catch(Exception $e){
     die ('Erreur: '.$e->getMessage());
 }
+
+//get IP
+//whether ip is from the proxy  
+if (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {  
+    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];  
+}  
+// whether ip is from the remote address  
+else{  
+ $ip = $_SERVER['REMOTE_ADDR'];  
+}
+var_dump($ip);
+//check if IP already in db
+$sql3= $bdd->query('SELECT IP FROM ip');
+$sql3->execute();
+$IPs=$sql3->fetchAll();
+//redirect if already in db
+for($x=0;$x<sizeOf($IPs);$x++){
+    if ($ip == $IPs[$x][0]){
+        echo "<script>
+                alert('You already voted!'); 
+                window.location.href='president.php'
+            </script>";
+    }
+}
+
 
 if (isset($_POST["vote"]) && isset($_POST['Piggy'])){
     //prepared statement to get number of votes
@@ -23,9 +43,12 @@ if (isset($_POST["vote"]) && isset($_POST['Piggy'])){
     $sql2= 'UPDATE results SET Votes = ? WHERE Name = ?';
     $bdd->prepare($sql2) -> execute([$data[0]+1,$_POST["Piggy"]]);
     
-    unset($_POST['vote']);
+    //add IP to db
+    echo $ip;
+    $sql4= $bdd->prepare('INSERT INTO ip VALUES (?)');
+    $sql4->execute([$ip]);
 
-    echo '<script type="text/javascript">window.localStorage.setItem("Voted", "Yes");</script>';
+    unset($_POST['vote']);
 
     header("location: president.php");
 }

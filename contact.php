@@ -97,7 +97,7 @@ function invalidEmail(){
 <body>
 
 <div id="intro" role="introduction-text">
-<h1> Contact us ! </h1>
+<h1> Contact me ! </h1>
 <p> Got a question or a comment about the project?</p>
 <p>Need to report a bug? Please get in touch !</p>
 </div>

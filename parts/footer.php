@@ -38,7 +38,6 @@ echo "<footer>"
         
         function thankVoter(){
             window.alert('Thanks for voting!');
-            window.location.href='president.php';
         }
         function confirmSubmit(){
             var agree=confirm('Please confirm your message is ready to be sent');
@@ -47,7 +46,7 @@ echo "<footer>"
             else
                 return false ;
         }
-        function changeImage(){
+        function changePresidentImage(){
             let president = String(document.getElementById('president-name').innerText);
             switch (president) {
                 case 'Boulette':
@@ -64,7 +63,7 @@ echo "<footer>"
             };
         };
         window.onload = function() {
-            changeImage();
+            changePresidentImage();
             window.setInterval('changeImage()', 5000);
         }
     </script>"
