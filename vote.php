@@ -23,7 +23,7 @@ if (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
 else{  
  $ip = $_SERVER['REMOTE_ADDR'];  
 }
-var_dump($ip);
+
 //check if IP already in db
 $sql3= $bdd->query('SELECT IP FROM ip');
 $sql3->execute();
